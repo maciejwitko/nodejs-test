@@ -11,10 +11,10 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
     try {
         if (req.method === `GET`) {
-            if (req.url === `/`) {
+            if (req.url === `/nodejs-test`) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.end('<h1>Homepage</h1>');
-            } else if (req.url === `/about`) {
+            } else if (req.url === `/nodejs-test/about`) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.end('<h1>About</h1>');
             } else {
